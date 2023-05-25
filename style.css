@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #080614;
+    color: #fff;
+}
+header{
+    display: flex;
+    flex-direction: column;
+}
+.head ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+}
+.head ul li{
+    cursor: pointer;
+    margin: 10px 20px;
+    font-size: 1em;
+    font-weight: 400;
+    font-style: normal;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.head ul li:hover{
+    text-decoration: underline;
+    color: #4432e8;
+}
+.hmbr{
+    display: none;    
+}
+nav{
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: center;
+}
+.left-nav{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.left-nav div img{
+    height: 40px;
+}
+
+.right-nav img{
+    width: 50vw;
+}
+
+main{
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    
+}
+.projects p{
+    text-align: center;
+}
+.project-list {
+    margin-top: 70px;
+    display: flex;
+    flex-direction:center;
+    justify-content: center;
+    align-items: center;
+}
+.project div p{
+    font-size: 40px;
+}
+.project img{
+    width: 40vw;
+}
+
+button{
+    border-bottom: 4px solid #4432e8;
+    background:none;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 600;
+    cursor: pointer;
+}
+.first-btn,.second-btn{    
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+ul li {
+    margin: 15px 5px;
+    list-style: none;
+}
+footer li img{
+    height: 30px;
+}
+
+/* Media Query */
+
+@media screen and (max-width:576px) {
+    .head ul{
+        display: none;
+    }
+    .hmbr{
+        display: block;
+        width: 30px;
+        cursor: pointer;
+    }
+    nav{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .projects{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .projects p{
+        text-align: center;
+    }
+}
